@@ -21,9 +21,11 @@ dotnet publish -c Release -r win-x64 --self-contained true -o .\Publish
 ```powershell
 vpk pack `
     --packId SERAP.FL3App `
+    --packTitle "FL3App" `
     --packVersion 0.11.1 `
     --packDir .\Publish `
-    --mainExe FL3App.exe
+    --mainExe FL3App.exe `
+    --icon .\Resources\Icon\serap_logo_vertical.ico
 ```
 
 ### 4. Charger le token
@@ -41,7 +43,7 @@ vpk upload github `
     --outputDir .\Releases `
     --publish `
     --releaseName "FL3App V0.11.1" `
-    --tag v0.11.1
+    --tag V0.11.1
 ```
 
 ### 6. Tester

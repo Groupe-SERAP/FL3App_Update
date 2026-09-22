@@ -355,9 +355,11 @@ la version de l'assembly doit correspondre à `0.11.1.x`.
 ```powershell
 vpk pack `
     --packId SERAP.FL3App `
+    --packTitle "FL3App" `
     --packVersion 0.11.1 `
     --packDir .\Publish `
-    --mainExe FL3App.exe
+    --mainExe FL3App.exe `
+    --icon .\Resources\Icon\serap_logo_vertical.ico
 ```
 
 La valeur :
@@ -416,7 +418,7 @@ vpk upload github `
     --outputDir .\Releases `
     --publish `
     --releaseName "FL3App V0.11.1" `
-    --tag v0.11.1
+    --tag V0.11.1
 ```
 
 Sortie attendue, approximativement :
