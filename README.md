@@ -52,7 +52,7 @@ Ne pas installer manuellement le nouveau Setup pour tester l'auto-update.
 
 ---
 
-# 16. Checklist avant publication
+# Checklist avant publication
 
 - [ ] La version du `.csproj` a été mise à jour
 - [ ] Le numéro `--packVersion` est identique
